@@ -1,0 +1,20 @@
+toc:
+  properties:
+    subcollection: vpc-journey
+    category: compute
+    audience: service
+    href: /docs/vpc-journey
+    path: vpc-journey
+    label: Deploying VPC
+
+  entries:
+    - navgroup:
+        id: learn
+        topics:
+        - vpc-onboarding-1.hidden.md
+
+    - navgroup:
+        id: howto
+        topics:
+        - vpc-onboarding-2.hidden.md
+

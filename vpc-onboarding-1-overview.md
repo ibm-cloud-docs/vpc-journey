@@ -11,7 +11,7 @@ subcollection: vpc-journey
 {{site.data.keyword.attribute-definition-list}}
 
 # Deployment Journey Overview
-{: #vpc-onboarding-overview}
+{: #vpc-overview}
 
 IBM Cloud for VPC...... 
 {: shortdesc}
@@ -20,13 +20,15 @@ Welcome to the Deployment Journey for VPC on IBM Cloud! Use the sidebar on the l
 {: tip}
 
 ## Journey Map
-{: #vpc-onboarding-overview-map}
-
+{: #vpc-overview-map}
+![Architecture](images/overview/journey-map.png){: class="center"}
 
 ## Assumptions
-{: #vpc-onboarding-overview-assumptions}
+{: #vpc-overview-assumptions}
 
 The deployment journey will be assuming the following scenario. 
+
+
 
 
 

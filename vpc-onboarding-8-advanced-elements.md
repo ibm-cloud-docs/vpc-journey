@@ -10,8 +10,8 @@ subcollection: vpc-journey
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deployment Topic2
-{: #vpc-onboarding-topic2}
+# Extend to Advanced Elements
+{: #vpc-advanced-elements}
 
 IBM Cloud for VPC...... 
 {: shortdesc}
@@ -19,5 +19,7 @@ IBM Cloud for VPC......
 Welcome to page2
 {: tip}
 
-
+## Journey Map
+{: #vpc-advanced-elements-map}
+![Architecture](images/advanced-elements/journey-map.png){: class="center"}
 

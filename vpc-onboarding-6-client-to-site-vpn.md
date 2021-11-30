@@ -10,8 +10,8 @@ subcollection: vpc-journey
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Client to Site VPN
-{: #vpc-onboarding-client-to-site-vpn}
+# Setup VPN Connectivity
+{: #vpc-vpn}
 
 Client to Site VPN provides the ability for users to establish a private connection between their device and VPCs running in IBM Cloud.  
 {: shortdesc}
@@ -19,5 +19,7 @@ Client to Site VPN provides the ability for users to establish a private connect
 Welcome to page2
 {: tip}
 
-
+## Journey Map
+{: #vpc-vpn-map}
+![Architecture](images/vpn/journey-map.png){: class="center"}
 

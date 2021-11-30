@@ -23,3 +23,8 @@ Welcome to page2
 {: #vpc-provisioning-map}
 ![Architecture](images/provision-vpc/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Establish Transit Gateway Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-tgw)

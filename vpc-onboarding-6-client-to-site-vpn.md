@@ -23,3 +23,8 @@ Welcome to page2
 {: #vpc-vpn-map}
 ![Architecture](images/vpn/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Setup Direct Link Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-directlink)

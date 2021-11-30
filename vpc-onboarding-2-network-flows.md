@@ -23,3 +23,8 @@ Welcome to page2
 {: #vpc-network-flows-map}
 ![Architecture](images/network-flows/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Configure IAM Roles](/docs/vpc-journey?topic=vpc-journey-vpc-iam-roles)

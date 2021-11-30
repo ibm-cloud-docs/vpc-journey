@@ -23,3 +23,8 @@ Welcome to page2
 {: #vpc-tgw-map}
 ![Architecture](images/tgw/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Setup VPN Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-vpn)

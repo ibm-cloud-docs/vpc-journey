@@ -23,3 +23,9 @@ Welcome to page2
 {: #vpc-advanced-elements-map}
 ![Architecture](images/advanced-elements/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Configure Logging for Security](/docs/vpc-journey?topic=vpc-journey-vpc-logging)
+

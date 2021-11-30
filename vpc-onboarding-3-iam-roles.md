@@ -23,3 +23,8 @@ Welcome to page2
 {: #vpc-iam-roles-map}
 ![Architecture](images/iam-roles/journey-map.png){: class="center"}
 
+
+## Next Steps
+{: #vpc-overview-next-steps}
+The next step on the deployment journey is:
+* [Provision VPC](/docs/vpc-journey?topic=vpc-journey-vpc-provisioning)

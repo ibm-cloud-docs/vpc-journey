@@ -24,6 +24,17 @@ Welcome to page2
 ![Architecture](images/advanced-elements/journey-map.png){: class="center"}
 
 
+
+## Hub-n-Spoke
+{: #vpc-overview-hub-n-spoke}
+
+The next step on the d
+
+![Architecture](images/advanced-elements/hub-and-spoke-standalone.png){: class="center"}
+
+
+
+
 ## Next Steps
 {: #vpc-overview-next-steps}
 The next step on the deployment journey is:

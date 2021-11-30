@@ -11,10 +11,11 @@ toc:
     - navgroup:
         id: learn
         topics:
-        - vpc-onboarding-1.hidden.md
+        - vpc-onboarding-1-overview.md
 
     - navgroup:
         id: howto
         topics:
-        - vpc-onboarding-2.hidden.md
+        - vpc-onboarding-2.md
+        - vpc-onboarding-3-client-to-site-vpn.md
 

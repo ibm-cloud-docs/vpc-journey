@@ -17,7 +17,7 @@ toc:
         id: howto
         topics:
         - vpc-onboarding-2-network-flows.md
-        - vpc-onboarding-3-iam-roles.md
+        - vpc-onboarding-3-prepare-account.md
         - vpc-onboarding-4-provision-vpc.md
         - vpc-onboarding-5-tgw.md
         - vpc-onboarding-6-client-to-site-vpn.md

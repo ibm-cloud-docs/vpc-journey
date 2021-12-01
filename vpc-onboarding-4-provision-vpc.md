@@ -13,9 +13,6 @@ subcollection: vpc-journey
 # Provision VPC
 {: #vpc-provisioning}
 
-IBM Cloud for VPC...... 
-{: shortdesc}
-
 
 
 ## Journey Map

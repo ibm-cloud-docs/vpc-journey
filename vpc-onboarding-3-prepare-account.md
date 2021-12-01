@@ -42,7 +42,9 @@ IBM Identity and Access Management (IAM) should be planned ahead and configured 
 
 - [List of IAM Permissions Needed to Perform an Action on a VPC Resource](https://{DomainName}/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls)
 
-  
+
+
+ 
 
 
 ![Architecture](images/prepare-account/vpc-iam.png){: class="center"}

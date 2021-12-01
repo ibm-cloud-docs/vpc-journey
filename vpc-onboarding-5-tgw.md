@@ -13,18 +13,24 @@ subcollection: vpc-journey
 # Establish Transit Gateway Connectivity
 {: #vpc-tgw}
 
-IBM Cloud for VPC...... 
-{: shortdesc}
 
-Welcome to page2
-{: tip}
 
 ## Journey Map
 {: #vpc-tgw-map}
 ![Architecture](images/tgw/journey-map.png){: class="center"}
 
+ 
+
+## Overview
+{: #vpc-tgw-overview}
+
+
+
+
 
 ## Next Steps
-{: #vpc-overview-next-steps}
+
+{: #vpc-tgw-next-steps}
 The next step on the deployment journey is:
+
 * [Setup VPN Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-vpn)

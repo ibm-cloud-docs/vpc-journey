@@ -13,12 +13,6 @@ subcollection: vpc-journey
 # Setup Direct Link Connectivity
 {: #vpc-directlink}
 
-IBM Cloud for VPC...... 
-{: shortdesc}
-
-Welcome to page2
-{: tip}
-
 ## Journey Map
 {: #vpc-directlink-map}
 ![Architecture](images/directlink/journey-map.png){: class="center"}

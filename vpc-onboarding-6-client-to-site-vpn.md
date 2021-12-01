@@ -68,25 +68,25 @@ Client to Site VPN provides the ability for users to establish a private connect
 
 
     - [Client certificate authoization steps](https://{DomainName}/docs/vpc?topic=vpc-vpn-client-environment-setup&interface=ui)
-
+    
     - Edit the .ovpn file just downloaded using any text editor with the necessary information from the client certificates that were created in step 4
 
-      
-11. Upload the .ovpn to your respective VPN client software
 
-![upload-ova](images/vpn/ovpn_upload.png)
+      
+11. Upload the .ovpn to your respective VPN client software ![upload-ova](images/vpn/ovpn_upload.png)
 
 
 12. If the VPN uses userID and passcode for authorization:  
 
 
     - Set userID to the email used for IAM authorization. 
-
+    
     - [Generate passcode](https://iam.cloud.ibm.com/identity/passcode)
-
+    
     - Don't worry if a connection error: "missing external certificate" pops up, just press continue 
 
-      
+
+​      
 13. Resources on your VPC should now be accessible!  
 
     NOTE: Make sure to add a new rule to the VPC security group to allow inbound traffic for the protocol and port chosen under additional configurations. If nothing was chosen, the defaults are UDP at port 443.![SG](images/vpn/security_group.png) 

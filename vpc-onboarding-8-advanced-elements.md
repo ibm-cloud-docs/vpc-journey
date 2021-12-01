@@ -33,6 +33,8 @@ If multiple VPCs will be used within the environment a "Hub-n-Spoke" approach ma
 - VPC Custom Routing is used to force ingress/egress traffic to/from the VNF(s) in the "Hub" VPC.
 
 
+  
+  
 
 The following architecture depicts a VPC Hub-n-Spoke Topology on the IBM Cloud:
 
@@ -45,6 +47,5 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the IBM Cloud:
 
 ## Next Steps
 {: #vpc-overview-next-steps}
-The next step on the deployment journey is:
-* [Configure Logging for Security](/docs/vpc-journey?topic=vpc-journey-vpc-logging)
+Additional resources, such as leveraging [Flow Logs](https://{DomainName}/docs/vpc?topic=vpc-flow-logs) for logging VPC traffic is available within our [documentation](https://{DomainName}/docs/vpc?topic=vpc-getting-started).
 

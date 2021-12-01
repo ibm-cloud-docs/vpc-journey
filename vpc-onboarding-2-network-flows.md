@@ -26,10 +26,9 @@ Taking the time to understand and plan network flows is a key ingredient to succ
 
 
 ## Overview
-
 {: #vpc-network-flows-video-walkthrough}
 
-The following network flows will be covered:
+The following network flows will be covered. Please note that while these represent some common connectivity requirements, not all may be required in your environment. 
 
 1. **VPC to/from On-Prem** connectivity allows for private communication between your on-prem network and the cloud based VPC network, and allows you to access VPC based resources as if they were running locally. The connection also provides a private path for VPC based applications to communicate back to resources on your local network.
 2. **VPC to/from VPC and/or Classic Infrastructure** connectivity allows for private communication between multiple VPCs. If you have existing resources still running on the IBM Cloud Classic Infrastructure, a similar flow can also be used to facilitate communication between VPC and Classic infrastructure resources. 
@@ -38,43 +37,41 @@ The following network flows will be covered:
 5. **VPC to Cloud Service Private Endpoints** connectivity provides for private communication from within the VPC to IBM Cloud Service private endpoints. Note the traffic flow is one-way (meaning an IBM Cloud Service cannot initiate a connection into a resource in your VPC).
 
 
+Additional details for each of these network flows can be found below. 
 
 
-## Detailed Flows
-{: #vpc-network-flows-details}
 
 
-In this section, detailed network flows will be reviewed. Please note that while these represent some common connectivity requirements, not all may be required in your environment. 
-
-
-  
-**Flow1: On-Prem to VPC**
+## Flow1: On-Prem to VPC
+{: #vpc-network-flows-1}
 ![Flow1](images/network-flows/onprem-to-vpc.png)
 
 
-  
-**Flow2: VPC to VPC and/or Classic Infrastructure**
+
+## Flow2: VPC to VPC and/or Classic Infrastructure
+
+{: #vpc-network-flows-2}
 ![Flow2](images/network-flows/vpc-to-vpc.png)
 
 
 
 
-  
-**Flow3: VPC to VMware (Overlay Network for VMs)**
+## Flow3: VPC to VMware (Overlay Network for VMs)
+{: #vpc-network-flows-3}
 ![Flow3](images/network-flows/vpc-to-vmware.png)
 
 
 
 
-  
-**Flow4: VPC to Internet**
+## Flow4: VPC to Internet
+{: #vpc-network-flows-4}
 ![Flow4](images/network-flows/vpc-to-internet.png)
 
 
 
 
-  
-**Flow5: VPC to Cloud Service Private Endpoints (via traditional CSE method)**
+## Flow5: VPC to Cloud Service Private Endpoints
+{: #vpc-network-flows-5}
 ![Flow5](images/network-flows/vpc-to-cse.png)
 
 

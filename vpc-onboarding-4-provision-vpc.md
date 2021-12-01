@@ -16,15 +16,32 @@ subcollection: vpc-journey
 IBM Cloud for VPC...... 
 {: shortdesc}
 
-Welcome to page2
-{: tip}
+
 
 ## Journey Map
 {: #vpc-provisioning-map}
 ![Architecture](images/provision-vpc/journey-map.png){: class="center"}
 
 
+## Getting Started
+{: #vpc-provisioning-getting-started}
+
+Provisioning of a VPC can be accomplished via the IBM Cloud Portal User Interface, IBM Cloud CLI, or via Terraform.  In this deployment guide, automation using Terraform will be the focus. 
+
+If you are brand new to IBM Cloud, a  [video](https://www.youtube.com/watch?v=pGLgtB193cI) showing how to use Portal UI to create a VPC may be a good first step to orient yourself around some of the concepts.  However, as you start to create multiple VPCs and want to leverage consistent repeatable patterns, you'll find Terrform automation to be more efficient..
+{: tip}
+
+To get started, the following Multi-zone VPC architecture will be used.
+![Architecture](images/provision-vpc/gcat-mz-bastion.png){: class="center"}
+
+1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below:
+
+![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
+
+2. From the Schematics Workspace tab, choose to create a new project workspace
+
 ## Next Steps
+
 {: #vpc-overview-next-steps}
 The next step on the deployment journey is:
 * [Establish Transit Gateway Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-tgw)

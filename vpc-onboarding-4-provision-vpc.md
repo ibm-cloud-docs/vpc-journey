@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-01"
 
 subcollection: vpc-journey
 
@@ -40,32 +40,24 @@ IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a c
 ### Import VPC Terraform Code to Schematics
 {: #vpc-provisioning-create-schematics-workspace}
 
-1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below:
-
-   
-
-![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
+1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below: ![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
 
   
 
-2. From the Schematics Workspace tab, choose to create a new project workspace.
-
-![CreateWorkspace](images/provision-vpc/schematics-create-workspace.png)
+2. From the Schematics Workspace tab, choose to create a new project workspace. ![CreateWorkspace](images/provision-vpc/schematics-create-workspace.png)
 
   
 
-3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0.
-
-![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
+3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0. ![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
 
  
 
-4. Specify the workspace details values based on your preferences.
+4. Specify the workspace details values based on your preferences. ![CreateWorkspace3](images/provision-vpc/schematics-create-workspace3.png)
 
 As a best practice, do NOT use the "default" resource group.  Create a resource group for this network or project provides more flexibility. For additional details see the [Preparing Your IBM Cloud Account](/docs/vpc-journey?topic=vpc-journey-vpc-prep-account) page of this deployment journey guide.
 {: tip}
 
-![CreateWorkspace3](images/provision-vpc/schematics-create-workspace3.png)
+
 
  
 
@@ -77,12 +69,11 @@ As a best practice, do NOT use the "default" resource group.  Create a resource 
 
 1. If not already there, navigate to the Settings page of your new Schematics workspace where you will see a list of variables (and their default values) which were found in the Terraform code.
 
-2. Enter a value for the IBM Cloud API Key variable (if it exists). The API key is the credential the terraform code will run under and may we associated with a userid or a serviceid.
+2. Enter a value for the IBM Cloud API Key variable (if it exists). The API key is the credential the terraform code will run under and may we associated with a userid or a serviceid. ![WorkspaceVariabless](images/provision-vpc/schematics-workspace-variables.png)
 
 To generate an API Key, click on Manage (located in top menu bar), select IAM, and then API keys. When entering the value in Schematics, be sure to select the "Sensitive" checkbox.
 {: tip}
 
-![WorkspaceVariabless](images/provision-vpc/schematics-workspace-variables.png)
 
   
 
@@ -99,28 +90,28 @@ Refer to the readme which accompanies the Terraform code for descriptions on var
 
 
 
-1. Click the Generate link to validate the configuration. This is similar to running "terraform plan" when using the CLI. No changes will be made nor any resources deployed. This will only perform a test run.
+1. Click the Generate link to validate the configuration. This is similar to running "terraform plan" when using the CLI. No changes will be made nor any resources deployed. This will only perform a test run. ![GenerateWorkspace](images/provision-vpc/schematics-workspace-generate.png)
 
-![GenerateWorkspace](images/provision-vpc/schematics-workspace-generate.png)
+
 
  
 
-2. If the generate action completes successfully, click the Apply button to provision this VPC configuration. 
+2. If the generate action completes successfully, click the Apply button to provision this VPC configuration.  ![ApplyWorkspace](images/provision-vpc/schematics-workspace-apply.png)
 
-![ApplyWorkspace](images/provision-vpc/schematics-workspace-apply.png)
 
-  
-
-3. Once the apply plan completes successfully, click on the menu icon (located in the top left corner) and navigate to the VPC Infrastructure page to browse your newly created VPC instance!
-
-![VPCCreated](images/provision-vpc/vpc-created.png)
 
   
 
+3. Once the apply plan completes successfully, click on the menu icon (located in the top left corner) and navigate to the VPC Infrastructure page to browse your newly created VPC instance! ![VPCCreated](images/provision-vpc/vpc-created.png)
 
-4. (Optional) If you would like to delete/destroy the VPC resources which was created, go back to the Schematics Workspace and select Actions > Destroy Resources.
 
-![DestroyResources](images/provision-vpc/destroy-resources.png)
+
+  
+
+
+4. (Optional) If you would like to delete/destroy the VPC resources which was created, go back to the Schematics Workspace and select Actions > Destroy Resources. ![DestroyResources](images/provision-vpc/destroy-resources.png)
+
+
 
  
 

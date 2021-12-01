@@ -40,15 +40,41 @@ To get started, the following Multi-zone VPC architecture will be used.
 IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a centralized location to manage the terraform state files and logs.
 {: tip}
 
+### Import VPC Terraform Code to Schematics
+{: #vpc-provisioning-create-schematics-workspace}
+
 1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below:
 
 ![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
 
 2. From the Schematics Workspace tab, choose to create a new project workspace.
+
 3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform v0.15.
+
 4. Specify the workspace details values based on your preferences.
+
 5. Validate the information entered and click Create to retrieve the Terraform code and create the Schematics workspace.
-6. 
+
+
+### Configure Terraform Variables
+{: #vpc-provisioning-config-schematics-workspace}  
+
+1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below:
+
+
+### Apply VPC Terraform Code
+{: #vpc-provisioning-apply-schematics-workspace}  
+
+1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below:
+
+
+
+## Additional VPC Terraform Architecture Patterns
+{: #vpc-provisioning-additional-patterns}
+
+The following site
+
+
 
 ## Next Steps
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-01"
 
 subcollection: vpc-journey
 
@@ -44,12 +44,14 @@ Additional details for each of these network flows can be found below.
 
 ## Flow1: On-Prem to VPC
 {: #vpc-network-flows-1}
+
 ![Flow1](images/network-flows/onprem-to-vpc.png)
 
 
 
 ## Flow2: VPC to VPC and/or Classic Infrastructure
 {: #vpc-network-flows-2}
+
 ![Flow2](images/network-flows/vpc-to-vpc.png)
 
 
@@ -57,6 +59,7 @@ Additional details for each of these network flows can be found below.
 
 ## Flow3: VPC to VMware (Overlay Network for VMs)
 {: #vpc-network-flows-3}
+
 ![Flow3](images/network-flows/vpc-to-vmware.png)
 
 
@@ -64,6 +67,7 @@ Additional details for each of these network flows can be found below.
 
 ## Flow4: VPC to Internet
 {: #vpc-network-flows-4}
+
 ![Flow4](images/network-flows/vpc-to-internet.png)
 
 
@@ -71,6 +75,7 @@ Additional details for each of these network flows can be found below.
 
 ## Flow5: VPC to Cloud Service Private Endpoints
 {: #vpc-network-flows-5}
+
 ![Flow5](images/network-flows/vpc-to-cse.png)
 
 

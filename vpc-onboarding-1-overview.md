@@ -26,7 +26,25 @@ Welcome to the Deployment Journey for VPC on IBM Cloud! Use the sidebar on the l
 ## Assumptions
 {: #vpc-overview-assumptions}
 
-The deployment journey will be assuming the following scenario. Please note that while your circumstance may not be exactly identical, you will still benefit from the overall journey steps and concepts covered in this guide.
+This deployment guide  will be assuming the following points. Please note that while your circumstance may not be exactly identical, you will still benefit from the overall journey steps and concepts covered in this guide.
+
+- Focus will be on establishing the underlying network connectivity to support VPC based workloads.
+
+  - A separate deployment guide will cover compute resources which runs within the VPC like IBM Kubernetes Services (IKS), Red Hat OpenShift, IBM Code Engine, VPC Virtual Server Instances (VSIs).
+
+- You are already familar with the concepts introduced in the "Tour IBM Cloud" videos available on the [Getting Started with IBM Cloud](https://{DomainName}/cloud/get-started)  page.
+
+- Access groups will need to be defined so only certain users have the ability to create and manage the VPC network settings (i.e. CIDR ranges, Subnet ACLs rules, etc.).
+
+- Deployment will start small (i.e. single multi-zone VPC) but will grow to multiple VPCs, so interconnectivity among the VPCs will be required.
+
+- Private connectivity to resources outside the VPC is needed. This includes IBM Cloud Services and potentially on-prem resources.
+
+  
+## Understanding IBM Cloud VPC Concepts
+{: #vpc-overview-concepts}
+
+![Understanding IBM Virtual Private Cloud (VPC)](https://www.youtube.com/embed/gffPD-mOBi8){: video output="iframe" data-script="none" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 
 
@@ -35,7 +53,6 @@ The deployment journey will be assuming the following scenario. Please note that
 {: #vpc-overview-next-steps}
 The next step on the deployment journey is:
 * [Understanding Network Flows](/docs/vpc-journey?topic=vpc-journey-vpc-network-flows)
-
 
 
 

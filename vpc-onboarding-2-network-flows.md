@@ -24,7 +24,9 @@ Taking the time to understand and plan network flows is a key ingredient to succ
 ![Architecture](images/network-flows/journey-map.png){: class="center"}
 
 
+
 ## Overview
+
 {: #vpc-network-flows-video-walkthrough}
 
 The following network flows will be covered:

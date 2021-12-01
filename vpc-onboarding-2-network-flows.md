@@ -47,40 +47,39 @@ The following network flows will be covered:
 In this section, detailed network flows will be reviewed. Please note that while these represent some common connectivity requirements, not all may be required in your environment. 
 
 
-
+  
 **Flow1: On-Prem to VPC**
 ![Flow1](images/network-flows/onprem-to-vpc.png)
 
 
-
+  
 **Flow2: VPC to VPC and/or Classic Infrastructure**
 ![Flow2](images/network-flows/vpc-to-vpc.png)
 
 
 
 
-
+  
 **Flow3: VPC to VMware (Overlay Network for VMs)**
 ![Flow3](images/network-flows/vpc-to-vmware.png)
 
 
 
 
-
+  
 **Flow4: VPC to Internet**
 ![Flow4](images/network-flows/vpc-to-internet.png)
 
 
 
 
-
+  
 **Flow5: VPC to Cloud Service Private Endpoints (via traditional CSE method)**
 ![Flow5](images/network-flows/vpc-to-cse.png)
 
 
 
 ## Next Steps
-
 {: #vpc-network-flows-next-steps}
 The next step on the deployment journey is:
 * [Configure IAM Roles](/docs/vpc-journey?topic=vpc-journey-vpc-iam-roles)

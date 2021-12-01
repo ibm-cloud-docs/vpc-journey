@@ -49,7 +49,6 @@ Additional details for each of these network flows can be found below.
 
 
 ## Flow2: VPC to VPC and/or Classic Infrastructure
-
 {: #vpc-network-flows-2}
 ![Flow2](images/network-flows/vpc-to-vpc.png)
 

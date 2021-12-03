@@ -23,10 +23,12 @@ subcollection: vpc-journey
 ## Overview
 {: #vpc-provisioning-overview}
 
-Provisioning of a VPC can be accomplished via the IBM Cloud Portal User Interface, IBM Cloud CLI, or via Terraform.  In this deployment guide, automation using Terraform will be the focus. 
+Provisioning of a VPC can be accomplished via the IBM Cloud Portal User Interface, IBM Cloud CLI, or via Terraform.  In this deployment guide, automation via Terraform will be leveraged. 
 
 If you are brand new to IBM Cloud, a [video](https://www.youtube.com/watch?v=pGLgtB193cI) showing how to use Portal UI to create a VPC may be a good first step to orient yourself around some of the concepts.  However, as you start to create multiple VPCs and want to leverage consistent repeatable patterns, you'll find Terrform automation to be more efficient.
 {: tip}
+
+ 
 
 To get started, the following Multi-zone VPC architecture will be used.
 ![Architecture](images/provision-vpc/gcat-mz-bastion.png){: class="center"}
@@ -40,7 +42,8 @@ IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a c
 ### Import VPC Terraform Code to Schematics
 {: #vpc-provisioning-create-schematics-workspace}
 
-1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below: ![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
+1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below: 
+   ![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
 
   
 
@@ -48,7 +51,8 @@ IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a c
 
   
 
-3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0. ![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
+3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0.
+    ![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
 
  
 

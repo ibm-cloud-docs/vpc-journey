@@ -37,6 +37,7 @@ The following network flows will be covered. Please note that while these repres
 5. **VPC to Cloud Service Private Endpoints** connectivity provides for private communication from within the VPC to IBM Cloud Service private endpoints. Note the traffic flow is one-way (meaning an IBM Cloud Service cannot initiate a connection into a resource in your VPC).
 
 
+
 Additional details for each of these network flows can be found below. 
 
 

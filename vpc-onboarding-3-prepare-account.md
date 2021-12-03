@@ -51,6 +51,10 @@ IBM Identity and Access Management (IAM) should be planned ahead and configured 
 
 
 
+
+
+
+
 ## Next Steps
 
 {: #vpc-prep-account-next-steps}

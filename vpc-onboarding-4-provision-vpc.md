@@ -75,7 +75,7 @@ To generate an API Key, click on Manage (located in top menu bar), select IAM, a
 {: tip}
 
 
-  
+
 
 3. Inspect the remaining variables and update the values as needed. For example, you will most likely need to update the resource group name.
 
@@ -126,6 +126,9 @@ Now that you understand how to deploy a VPC, explore some additional deployment 
 - [Multi-Zone VPC](https://github.com/Cloud-Schematics/gcat-multizone-vpc)
 
 - [IBM Cloud Tutorials - Public Frontend and Private Backend Subnets](https://{DomainName}/docs/solution-tutorials?topic=solution-tutorials-vpc-public-app-private-backend)
+
+- [Hub-n-Spoke VPC](/docs/vpc-journey?topic=vpc-journey-vpc-advanced-elements)
+
 
 
 

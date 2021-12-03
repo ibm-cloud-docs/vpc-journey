@@ -43,6 +43,7 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the IBM Cloud:
 
 ## Configuration Steps
 - Provision VPC as hub with following prefixes
+![hub-prefixes](images/advanced-elements/hub-prefixes.png){: class="center"}
 - Provision VNF of your choice. Here using centOS-7 as VNF and enable ip spoofing on the NIC.
 - Enable IP forwarding in centOS-7
 - Provision VPCs as spokes. 

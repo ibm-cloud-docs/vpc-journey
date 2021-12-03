@@ -42,17 +42,25 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the IBM Cloud:
 ![Architecture](images/advanced-elements/hub-and-spoke-standalone.png){: class="center"}
 
 ## Configuration Steps
-- Provision VPC as hub with following prefixes
+- Provision VPC as hub (https://cloud.ibm.com/vpc-ext/provision/vpc) with following prefixes:
 ![hub-prefixes](images/advanced-elements/hub-prefixes.png){: class="center"}
-- Provision VNF of your choice. Here using centOS-7 as VNF and enable ip spoofing on the NIC.
-- Enable IP forwarding in centOS-7
+
+- Provision VNF of your choice. In this example using centOS-7 as VNF and enable ip spoofing on the NIC.
+![ip-spoofing](images/advanced-elements/ip-spoofing-enable.png){: class="center"}
+
+- Enable IP forwarding in centOS-7 (sysctl -w net.ipv4.ip_forward=1)
 - Provision VPCs as spokes. 
 - Deploy VM-based or container-based clusters on spoke VPCs.
-- Provision Transit Gateway
+- Provision Transit Gateway (https://cloud.ibm.com/interconnectivity/transit/provision)
 - Add all VPCs (Hub and spokes) as connections to transit gateway
-- Define an ingress rule in hub VPC's custom routing table to force packets from on-premise to transit via VNF to reach target workloads
-- Define an engress rule in spoke VPC's custom routing table to force the return path from target destined to on-premise to transit via VNF.
+![tgw-connections](images/advanced-elements/transit-gateway-connections.png){: class="center"}
 
+- Define an ingress rule in hub VPC's custom routing table to force packets from on-premise to transit via VNF to reach target workloads
+![ingress-rule](images/advanced-elements/hub-ingress-rule.png){: class="center"}
+
+- Define an engress rule in spoke VPC's custom routing table to force the return path from target destined to on-premise to transit via VNF.
+![egress-rule1](images/advanced-elements/spoke1-egress-rule.png){: class="center"}
+![egress-rule2](images/advanced-elements/spoke2-egress-rule.png){: class="center"}
 
 ## Next Steps
 {: #vpc-overview-next-steps}

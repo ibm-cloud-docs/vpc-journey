@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-06"
 
 subcollection: vpc-journey
 
@@ -56,8 +56,8 @@ IBM Identity and Access Management (IAM) should be planned ahead and configured 
 
 
 ## Next Steps
-
 {: #vpc-prep-account-next-steps}
+
 The next step on the deployment journey is:
 
 * [Provision VPC](/docs/vpc-journey?topic=vpc-journey-vpc-provisioning)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-06"
 
 subcollection: vpc-journey
 
@@ -36,19 +36,16 @@ The IBM Cloud VPC Transit Gateway allows you to establish inter-connectivity wit
 
 The following example depicts how Transit Gateway devices can be used to connect VPCs together. For additional details on how to configure a Transit Gateway, along with some scenario, please refer to the [documentation](https://{DomainName}/docs/transit-gateway?topic=transit-gateway-about) .
 
- 
 
- 
-
-![Architecture](images/tgw/tgw-arch-sample1.png){: class="center"}
+   ![Architecture](images/tgw/tgw-arch-sample1.png){: class="center"}
 
 
 
 
 
 ## Next Steps
-
 {: #vpc-tgw-next-steps}
+
 The next step on the deployment journey is:
 
 * [Setup VPN Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-vpn)

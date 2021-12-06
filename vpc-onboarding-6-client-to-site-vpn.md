@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-06"
 
 subcollection: vpc-journey
 
@@ -18,7 +18,8 @@ Client to Site VPN provides the ability for users to establish a private connect
 
 ## Journey Map
 {: #vpc-vpn-map}
-![Architecture](images/vpn/journey-map.png){: class="center"}
+
+   ![Architecture](images/vpn/journey-map.png){: class="center"}
 
 
 
@@ -28,7 +29,8 @@ Client to Site VPN provides the ability for users to establish a private connect
 
 
 
-1. Create an IAM access group following steps detailed [here](https://{DomainName}/docs/vpc?topic=vpc-client-to-site-authentication#creating-cert-manager-instance-import) ![Access](images/vpn/access.png)
+1. Create an IAM access group following steps detailed [here](https://{DomainName}/docs/vpc?topic=vpc-client-to-site-authentication#creating-cert-manager-instance-import) 
+   ![Access](images/vpn/access.png)
 
    
 
@@ -52,20 +54,22 @@ Client to Site VPN provides the ability for users to establish a private connect
 
    
 
-7. Authentication can be userID and passcode or using client certificate or both for the most security ![Authorization](images/vpn/authorization.png)
+7. Authentication can be userID and passcode or using client certificate or both for the most security 
+   ![Authorization](images/vpn/authorization.png)
 
    
 
-8. Finish creating the VPN and download the client profile ![Download](images/vpn/client_profile.png)
+8. Finish creating the VPN and download the client profile 
+   ![Download](images/vpn/client_profile.png)
 
    
 
-9. Go to the VPN server routes tab and follow [route creation guide](https://{DomainName}/docs/vpc?topic=vpc-vpn-client-to-site-routes&interface=ui#create-route-ui) ![route tab](images/vpn/route_tab.png) ![route tab](images/vpn/create_route.png)
+9. Go to the VPN server routes tab and follow [route creation guide](https://{DomainName}/docs/vpc?topic=vpc-vpn-client-to-site-routes&interface=ui#create-route-ui) ![route tab](images/vpn/route_tab.png) 
+   ![route tab](images/vpn/create_route.png)
 
    
 
 10. If the VPN uses client certificate for authorization:  
-
 
     - [Client certificate authoization steps](https://{DomainName}/docs/vpc?topic=vpc-vpn-client-environment-setup&interface=ui)
     
@@ -78,7 +82,6 @@ Client to Site VPN provides the ability for users to establish a private connect
 
 12. If the VPN uses userID and passcode for authorization:  
 
-
     - Set userID to the email used for IAM authorization. 
     
     - [Generate passcode](https://iam.cloud.ibm.com/identity/passcode)
@@ -88,13 +91,17 @@ Client to Site VPN provides the ability for users to establish a private connect
 
 ​      
 13. Resources on your VPC should now be accessible!  
+   
+   ![SG](images/vpn/security_group.png) 
 
-    NOTE: Make sure to add a new rule to the VPC security group to allow inbound traffic for the protocol and port chosen under additional configurations. If nothing was chosen, the defaults are UDP at port 443.![SG](images/vpn/security_group.png) 
+   Make sure to add a new rule to the VPC security group to allow inbound traffic for the protocol and port chosen under additional configurations. If nothing was chosen, the defaults are UDP at port 443.
+   {: note}
+      
 
 
 
 ## Next Steps
-
 {: #vpc-overview-next-steps}
+
 The next step on the deployment journey is:
 * [Setup Direct Link Connectivity](/docs/vpc-journey?topic=vpc-journey-vpc-directlink)

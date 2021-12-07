@@ -40,10 +40,11 @@ The following example depicts how Transit Gateway devices can be used to connect
    ![Architecture](images/tgw/tgw-arch-sample1.png){: class="center"}
    
 
-The following example depicts how Transit Gateway devices can be used to connect VPC to classic infrastructure together.
-**Note** - Classic infrastructure resource from any region can be acceesible to local Transit Gateway
-    
-   ![Architecture](images/tgw/vpc-to-classic-tgw.png){: class="center"}
+The following example depicts how Transit Gateway devices can be used to connect VPC to classic infrastructure together. Note that Classic infrastructure resource from any region can be acceesible to local Transit Gateway
+
+
+   ![tgw-classic](images/tgw/vpc-to-classic-tgw.png){: class="center"}
+   
 
 For additional details on how to configure a Transit Gateway, along with some scenario, please refer to the [documentation](https://{DomainName}/docs/transit-gateway?topic=transit-gateway-about)
 

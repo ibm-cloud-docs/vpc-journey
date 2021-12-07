@@ -34,13 +34,18 @@ The IBM Cloud VPC Transit Gateway allows you to establish inter-connectivity wit
 
 
 
-The following example depicts how Transit Gateway devices can be used to connect VPCs together. For additional details on how to configure a Transit Gateway, along with some scenario, please refer to the [documentation](https://{DomainName}/docs/transit-gateway?topic=transit-gateway-about) .
+The following example depicts how Transit Gateway devices can be used to connect VPCs together.
 
 
    ![Architecture](images/tgw/tgw-arch-sample1.png){: class="center"}
+   
 
+The following example depicts how Transit Gateway devices can be used to connect VPC to classic infrastructure together.
+**Note** - Classic infrastructure resource from any region can be acceesible to local Transit Gateway
+    
+   ![Architecture](images/tgw/vpc-to-classic-tgw.png){: class="center"}
 
-
+For additional details on how to configure a Transit Gateway, along with some scenario, please refer to the [documentation](https://{DomainName}/docs/transit-gateway?topic=transit-gateway-about)
 
 
 ## Next Steps

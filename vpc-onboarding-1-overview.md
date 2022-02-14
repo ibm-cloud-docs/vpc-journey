@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-02"
+  years: 2021, 2022
+lastupdated: "2022-02-14"
 
 subcollection: vpc-journey
 
@@ -13,10 +13,10 @@ subcollection: vpc-journey
 # Deployment Journey Overview
 {: #vpc-overview}
 
-IBM Cloud Virtual Private Cloud (VPC) allows you to establish your own virtual private cloud by defining a virtual network that is logically isolated from all other public cloud tenants. The underlying software defined networking (SDN) and virtual network functions allows you to quickly establish the network constructs and on-prem connectivity needed to run your workload. The information contained within this document is meant to serve as a technical guide for beginning with a new IBM Cloud Account and leading towards a fully configured VPC network environment.
+{{site.data.keyword.vpc_full}}(VPC) allows you to establish your own virtual private cloud by defining a virtual network that is logically isolated from all other public cloud tenants. The underlying software defined networking (SDN) and virtual network functions allows you to quickly establish the network constructs and on-prem connectivity needed to run your workload. The information contained within this document is meant to serve as a technical guide for beginning with a new {{site.data.keyword.Bluemix_notm}} Account and leading towards a fully configured VPC network environment.
 {: shortdesc}
 
-Welcome to the Deployment Journey for VPC on IBM Cloud! Use the sidebar on the left to navigate between the journey points.
+Welcome to the Deployment Journey for VPC on {{site.data.keyword.Bluemix_notm}}! Use the sidebar on the left to navigate between the journey points.
 {: tip}
 
 ## Journey Map
@@ -28,7 +28,7 @@ Welcome to the Deployment Journey for VPC on IBM Cloud! Use the sidebar on the l
 
 This deployment guide  will be assuming the following points. Please note that while your circumstance may not be exactly identical, you will still benefit from the overall journey steps and concepts covered in this guide.
 
-- You are already familar with the concepts introduced in the "Tour IBM Cloud" videos available on the [Getting Started with IBM Cloud](https://{DomainName}/cloud/get-started)  page.
+- You are already familar with the concepts introduced in the "Tour {{site.data.keyword.Bluemix_notm}}" videos available on the [Getting Started with {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/cloud/get-started)  page.
 
 - Access groups will need to be defined so only certain users have the ability to create and manage the VPC network settings (i.e. CIDR ranges, Subnet ACLs rules, etc.).
 
@@ -38,18 +38,15 @@ This deployment guide  will be assuming the following points. Please note that w
 
   - Note: A separate deployment guide will cover the compute resources which runs within the VPC like IBM Kubernetes Services (IKS), Red Hat OpenShift, IBM Code Engine, and VPC Virtual Server Instances (VSIs).
 
-- Deployment will start small (i.e. single multi-zone VPC) but will grow to multiple VPCs, so interconnectivity among the VPCs will be required (and may even span across multiple IBM Cloud accounts).
+- Deployment will start small (i.e. single multi-zone VPC) but will grow to multiple VPCs, so interconnectivity among the VPCs will be required (and may even span across multiple {{site.data.keyword.Bluemix_notm}} accounts).
 
-- Private connectivity to resources outside the VPC is needed. This includes IBM Cloud Services and potentially on-prem resources.
+- Private connectivity to resources outside the VPC is needed. This includes {{site.data.keyword.Bluemix_notm}} Services and potentially on-prem resources.
 
   
-## Understanding IBM Cloud VPC Concepts
+## Understanding {{site.data.keyword.Bluemix_notm}} VPC Concepts
 {: #vpc-overview-concepts}
 
 ![Understanding IBM Virtual Private Cloud (VPC)](https://www.youtube.com/embed/gffPD-mOBi8){: video output="iframe" data-script="none" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
-
-
-
 
 ## Next Steps
 {: #vpc-overview-next-steps}

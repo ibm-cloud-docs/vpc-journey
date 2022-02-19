@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-30"
+  years: 2021,2022
+lastupdated: "2022-02-18"
 
 subcollection: vpc-journey
 
@@ -13,7 +13,7 @@ subcollection: vpc-journey
 # Configure Logging for Security
 {: #vpc-logging}
 
-IBM Cloud for VPC...... 
+{{site.data.keyword.Bluemix_notm}} for VPC...... 
 {: shortdesc}
 
 Welcome to page2

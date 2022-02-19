@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-06"
+  years: 2021, 2022
+lastupdated: "2022-02-18"
 
 subcollection: vpc-journey
 
@@ -10,15 +10,13 @@ subcollection: vpc-journey
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Prepare Your IBM Cloud Account
+# Prepare Your {{site.data.keyword.Bluemix_notm}} Account
 {: #vpc-prep-account}
 
 
 ## Journey Map
 {: #vpc-prep-account-map}
 ![Architecture](images/prepare-account/journey-map.png){: class="center"}
-
-
 
 ## Setup Resource Group
 
@@ -28,13 +26,12 @@ Resource Groups allow you to organize the resources/instances into groups (i.e. 
 
 - [Best practices for resource groups and assigning access](https://{DomainName}/docs/account?topic=account-account_setup)
 
-  
 ## Configure IAM
 {: #vpc-prep-account-iam}
 
-IBM Identity and Access Management (IAM) should be planned ahead and configured before the provisioning of a VPC on IBM Cloud. Typically, only users which serve as Network Admins should have access to create and manage the VPC (i.e. you may want to allow users view and create resources within the VPC but probably do not want them changing your VPC network/IP configuration). Please refer to the follow assets to understand IAM concepts and required permissions:
+IBM Identity and Access Management (IAM) should be planned ahead and configured before the provisioning of a VPC on {{site.data.keyword.Bluemix_notm}}. Typically, only users which serve as Network Admins should have access to create and manage the VPC (i.e. you may want to allow users view and create resources within the VPC but probably do not want them changing your VPC network/IP configuration). Please refer to the follow assets to understand IAM concepts and required permissions:
 
-- [Understand IAM Concepts in the IBM Cloud](https://{DomainName}/docs/account?topic=account-iamoverview)
+- [Understand IAM Concepts in the {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/docs/account?topic=account-iamoverview)
 
 - [Getting Start with IAM and VPC](https://{DomainName}/docs/vpc?topic=vpc-iam-getting-started)
 
@@ -42,18 +39,7 @@ IBM Identity and Access Management (IAM) should be planned ahead and configured 
 
 - [List of IAM Permissions Needed to Perform an Action on a VPC Resource](https://{DomainName}/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls)
 
-
-
- 
-
-
 ![Architecture](images/prepare-account/vpc-iam.png){: class="center"}
-
-
-
-
-
-
 
 ## Next Steps
 {: #vpc-prep-account-next-steps}

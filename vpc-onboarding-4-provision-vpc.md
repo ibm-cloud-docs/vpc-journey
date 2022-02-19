@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-06"
+  years: 2021, 2022
+lastupdated: "2022-02-18"
 
 subcollection: vpc-journey
 
@@ -23,9 +23,9 @@ subcollection: vpc-journey
 ## Overview
 {: #vpc-provisioning-overview}
 
-Provisioning of a VPC can be accomplished via the IBM Cloud Portal User Interface, IBM Cloud CLI, or via Terraform.  In this deployment guide, automation via Terraform will be leveraged. 
+Provisioning of a VPC can be accomplished via the {{site.data.keyword.Bluemix_notm}} Portal User Interface, {{site.data.keyword.Bluemix_notm}} CLI, or via Terraform.  In this deployment guide, automation via Terraform will be leveraged. 
 
-If you are brand new to IBM Cloud, a [video](https://www.youtube.com/watch?v=pGLgtB193cI) showing how to use Portal UI to create a VPC may be a good first step to orient yourself around some of the concepts.  However, as you start to create multiple VPCs and want to leverage consistent repeatable patterns, you'll find Terrform automation to be more efficient.
+If you are brand new to {{site.data.keyword.Bluemix_notm}}, a [video](https://www.youtube.com/watch?v=pGLgtB193cI) showing how to use Portal UI to create a VPC may be a good first step to orient yourself around some of the concepts.  However, as you start to create multiple VPCs and want to leverage consistent repeatable patterns, you'll find Terrform automation to be more efficient.
 {: tip}
 
  
@@ -36,7 +36,7 @@ To get started, the following Multi-zone VPC architecture will be used.
 ## Getting Started
 {: #vpc-provisioning-getting-started}
 
-IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a centralized location to manage the terraform state files and logs.
+{{site.data.keyword.Bluemix_notm}} Schematics allows you to "run terraform in the cloud" and provides a centralized location to manage the terraform state files and logs.
 {: tip}
 
 ### Import VPC Terraform Code to Schematics
@@ -58,7 +58,7 @@ IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a c
 
 4. Specify the workspace details values based on your preferences. ![CreateWorkspace3](images/provision-vpc/schematics-create-workspace3.png)
 
-   As a best practice, do NOT use the "default" resource group.  Create a resource group for this network or project provides more flexibility. For additional details see the [Preparing Your IBM Cloud Account](/docs/vpc-journey?topic=vpc-journey-vpc-prep-account) page of this deployment journey guide.
+   As a best practice, do NOT use the "default" resource group.  Create a resource group for this network or project provides more flexibility. For additional details see the [Preparing Your {{site.data.keyword.Bluemix_notm}} Account](/docs/vpc-journey?topic=vpc-journey-vpc-prep-account) page of this deployment journey guide.
    {: tip}
 
 
@@ -70,7 +70,7 @@ IBM Cloud Schematics allows you to "run terraform in the cloud" and provides a c
 
 1. If not already there, navigate to the Settings page of your new Schematics workspace where you will see a list of variables (and their default values) which were found in the Terraform code.
 
-2. Enter a value for the IBM Cloud API Key variable (if it exists). The API key is the credential the terraform code will run under and may we associated with a userid or a serviceid. 
+2. Enter a value for the {{site.data.keyword.Bluemix_notm}} API Key variable (if it exists). The API key is the credential the terraform code will run under and may we associated with a userid or a serviceid. 
    ![WorkspaceVariabless](images/provision-vpc/schematics-workspace-variables.png)
 
    To generate an API Key, click on Manage (located in top menu bar), select IAM, and then API keys. When entering the value in Schematics, be sure to select the "Sensitive" checkbox.
@@ -127,7 +127,7 @@ Now that you understand how to deploy a VPC, explore some additional deployment 
 
 - [Multi-Zone VPC](https://github.com/Cloud-Schematics/gcat-multizone-vpc)
 
-- [IBM Cloud Tutorials - Public Frontend and Private Backend Subnets](https://{DomainName}/docs/solution-tutorials?topic=solution-tutorials-vpc-public-app-private-backend)
+- [{{site.data.keyword.Bluemix_notm}} Tutorials - Public Frontend and Private Backend Subnets](https://{DomainName}/docs/solution-tutorials?topic=solution-tutorials-vpc-public-app-private-backend)
 
 - [Hub-n-Spoke VPC](/docs/vpc-journey?topic=vpc-journey-vpc-advanced-elements)
 

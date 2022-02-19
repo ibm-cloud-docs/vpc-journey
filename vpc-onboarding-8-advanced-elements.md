@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-01"
+  years: 2021,2022
+lastupdated: "2022-02-18"
 
 subcollection: vpc-journey
 
@@ -17,8 +17,6 @@ subcollection: vpc-journey
 {: #vpc-advanced-elements-map}
 ![Architecture](images/advanced-elements/journey-map.png){: class="center"}
 
-
-
 ## Overview
 {: #vpc-overview-hub-n-spoke}
 
@@ -31,13 +29,7 @@ If multiple VPCs will be used within the environment a "Hub-n-Spoke" approach ma
   - While VPC has native controls such as Subnet ACLs and Security Groups for control traffic, depending on the complexity of your organization, your network team may prefer to leverage centralized VNFs in transit VPC to control the traffic.
 - VPC's Custom Routing using ingress/egress rules is used to transit packets to/from the VNF(s) in the "Hub" VPC
 
-
-  
-  
-
-The following architecture depicts a VPC Hub-n-Spoke Topology on the IBM Cloud:
-
-
+The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data.keyword.Bluemix_notm}}:
 
 ![Architecture](images/advanced-elements/hub-and-spoke-standalone.png){: class="center"}
 

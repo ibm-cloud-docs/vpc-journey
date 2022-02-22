@@ -49,7 +49,7 @@ Client to Site VPN provides the ability for users to establish a private connect
 12. If the VPN uses userID and passcode for authorization:  
 
     - Set userID to the email used for IAM authorization. 
-    - [Generate passcode](https://iam.cloud.ibm.com/identity/passcode)
+    - [Generate passcode](https://iam.{{site.data.keyword.Bluemix_notm}}/identity/passcode)
     - Don't worry if a connection error: "missing external certificate" pops up, just press continue 
 
 13. Resources on your VPC should now be accessible!  

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021,2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-02-22"
 
 subcollection: vpc-journey
 
@@ -27,7 +27,7 @@ In this part of the journey, we will cover how to **establish provides private c
 - {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated Hosting on Classic (DL 1.0)
 - {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated Exchange on Classic (DL 1.0)
 
-Direct Link on Classic is also referred to as Direct Link 1.0 and is traditionally used in an environment mainly focussed around {{site.data.keyword.Bluemix_notm}} Classic Infrastructure. **As we will be working with a VPC based environment, this deployment guide will focus on Direct Link 2.0. ** (A decision tree which which leads to Direct Link 2.0 can be found in the [documentation](https://{DomainName}/docs/direct-link?topic=direct-link-get-started-with-ibm-cloud-direct-link#get-started-solution-to-order).)
+Direct Link on Classic is also referred to as Direct Link 1.0 and is traditionally used in an environment mainly focussed around {{site.data.keyword.Bluemix_notm}} Classic Infrastructure. **As we will be working with a VPC based environment, this deployment guide will focus on Direct Link 2.0.** (A decision tree which which leads to Direct Link 2.0 can be found in the [documentation](https://{DomainName}/docs/direct-link?topic=direct-link-get-started-with-ibm-cloud-direct-link#get-started-solution-to-order).)
 {: tip}
 
 When reviewing location names in the Direct Link documentation, be aware that Dallas and Washington are unique in that their datacenter ids do not match the VPC zone numbers. Dallas 10, Dallas 12, and Dallas 13 map to Dallas 1 (Zone1), Dallas 2 (Zone2), and Dallas 3 (Zone3) in VPC. Likewise, Washington DC 4, Washington DC 6, Washington DC 7 map to Washington DC 1, Washington DC 2, and Washington DC 3 in VPC. 
@@ -55,8 +55,8 @@ Before moving on, be aware of the following attributes of the Direct Link 2.0 se
 ## Ordering Direct Link
 {: #vpc-directlink-order}
 
-* Detailed steps (including screenshots) to order **Direct Link Dedicated** are available in the [doccumentation](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated).
-* Detailed steps (including screenshots) to order **Direct Link Connect** are available in the [doccumentation](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-connect)
+* Detailed steps (including screenshots) to order **Direct Link Dedicated** are available in the [documentation](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated).
+* Detailed steps (including screenshots) to order **Direct Link Connect** are available in the [documentation](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-connect)
 
 
 

@@ -28,8 +28,6 @@ Provisioning of a VPC can be accomplished via the {{site.data.keyword.Bluemix_no
 If you are brand new to {{site.data.keyword.Bluemix_notm}}, a [video](https://www.youtube.com/watch?v=pGLgtB193cI) showing how to use Portal UI to create a VPC may be a good first step to orient yourself around some of the concepts.  However, as you start to create multiple VPCs and want to leverage consistent repeatable patterns, you'll find Terrform automation to be more efficient.
 {: tip}
 
- 
-
 To get started, the following Multi-zone VPC architecture will be used.
 ![Architecture](images/provision-vpc/gcat-mz-bastion.png){: class="center"}
 
@@ -42,19 +40,13 @@ To get started, the following Multi-zone VPC architecture will be used.
 ### Import VPC Terraform Code to Schematics
 {: #vpc-provisioning-create-schematics-workspace}
 
-1. Login to cloud.ibm.com and navigate to the IBM Schematics service as shown in the figure below: 
+1. Login to {{site.data.keyword.Bluemix_notm}} and navigate to the IBM Schematics service as shown in the figure below: 
    ![SchematicsMenuItem](images/provision-vpc/schematics-menu-item.png)
-
-  
 
 2. From the Schematics Workspace tab, choose to create a new project workspace. ![CreateWorkspace](images/provision-vpc/schematics-create-workspace.png)
 
-  
-
-3. Schematics can automatically pull terraform code from a GitHub repo. Enter "https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet" as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0.
+3. Schematics can automatically pull terraform code from a GitHub repo. Enter `https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet` as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0.
     ![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
-
- 
 
 4. Specify the workspace details values based on your preferences. ![CreateWorkspace3](images/provision-vpc/schematics-create-workspace3.png)
 
@@ -86,39 +78,17 @@ To get started, the following Multi-zone VPC architecture will be used.
 ### Apply VPC Terraform Code
 {: #vpc-provisioning-apply-schematics-workspace}  
 
-
-
 1. Click the Generate link to validate the configuration. This is similar to running "terraform plan" when using the CLI. No changes will be made nor any resources deployed. This will only perform a test run. 
    ![GenerateWorkspace](images/provision-vpc/schematics-workspace-generate.png)
-
-
-
- 
 
 2. If the generate action completes successfully, click the Apply button to provision this VPC configuration.  
    ![ApplyWorkspace](images/provision-vpc/schematics-workspace-apply.png)
 
-
-
-  
-
 3. Once the apply plan completes successfully, click on the menu icon (located in the top left corner) and navigate to the VPC Infrastructure page to browse your newly created VPC instance! 
    ![VPCCreated](images/provision-vpc/vpc-created.png)
 
-
-
-  
-
-
 4. (Optional) If you would like to delete/destroy the VPC resources which was created, go back to the Schematics Workspace and select Actions > Destroy Resources. 
    ![DestroyResources](images/provision-vpc/destroy-resources.png)
-
-
-
- 
-
- 
-
 
 ## Additional VPC Deployment Patterns and Resources
 {: #vpc-provisioning-additional-patterns}
@@ -130,9 +100,6 @@ Now that you understand how to deploy a VPC, explore some additional deployment 
 - [{{site.data.keyword.Bluemix_notm}} Tutorials - Public Frontend and Private Backend Subnets](https://{DomainName}/docs/solution-tutorials?topic=solution-tutorials-vpc-public-app-private-backend)
 
 - [Hub-n-Spoke VPC](/docs/vpc-journey?topic=vpc-journey-vpc-advanced-elements)
-
-
-
 
 ## Next Steps
 {: #vpc-overview-next-steps}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021,2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-02-22"
 
 subcollection: vpc-journey
 
@@ -34,7 +34,7 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data
 ![Architecture](images/advanced-elements/hub-and-spoke-standalone.png){: class="center"}
 
 ## Configuration Steps
-- Provision VPC as hub (https://cloud.ibm.com/vpc-ext/provision/vpc) with following prefixes:
+- [Provision VPC as hub](https://{DomainName}/vpc-ext/provision/vpc) with following prefixes:
 ![hub-prefixes](images/advanced-elements/hub-prefixes.png){: class="center"}
 
 - Provision VNF of your choice. In this example using centOS-7 as VNF and enable ip spoofing on the NIC.
@@ -43,7 +43,7 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data
 - Enable IP forwarding in centOS-7 (sysctl -w net.ipv4.ip_forward=1)
 - Provision VPCs as spokes. 
 - Deploy VM-based or container-based clusters on spoke VPCs.
-- Provision Transit Gateway (https://cloud.ibm.com/interconnectivity/transit/provision)
+- [Provision Transit Gateway](https://{DomainName}/interconnectivity/transit/provision)
 - Add all VPCs (Hub and spokes) as connections to transit gateway
 ![tgw-connections](images/advanced-elements/transit-gateway-connections.png){: class="center"}
 

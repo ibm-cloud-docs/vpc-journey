@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-23"
+lastupdated: "2022-02-25"
 
 subcollection: vpc-journey
 
@@ -62,7 +62,7 @@ To get started, the following Multi-zone VPC architecture will be used.
 
 1. If not already there, navigate to the **Settings** page of your new Schematics workspace where you will see a list of variables (and their default values) which were found in the Terraform code.
 
-2. Enter a value for the {{site.data.keyword.Bluemix_notm}} API Key variable (if it exists) by clicking on the action menu. _Remember to check the `Sensitive` flag_.
+2. Enter a value for the {{site.data.keyword.Bluemix_notm}} API Key variable (if it exists) by clicking on the action menu.
    ![WorkspaceVariables](images/provision-vpc/schematics-workspace-variables.png)
 
    The API key is the credential the terraform code will run under and may we associated with a userid or a serviceid. To generate an API Key, click on Manage (located in top menu bar), select IAM, and then API keys. When entering the value in Schematics, be sure to select the "Sensitive" checkbox.
@@ -85,7 +85,7 @@ To get started, the following Multi-zone VPC architecture will be used.
 
 3. Once the apply plan completes successfully, click on the menu icon (located in the top left corner) and navigate to the VPC Infrastructure page to browse your newly created VPC instance! 
 
-4. (Optional) If you would like to delete/destroy the VPC resources which was created, go back to the Schematics Workspace and select Actions > Destroy Resources. 
+4. (Optional) If you would like to delete/destroy the VPC resources which was created, go back to the Schematics Workspace and select **Actions** > **Destroy resources**. 
    ![DestroyResources](images/provision-vpc/destroy-resources.png)
 
 ## Additional VPC Deployment Patterns and Resources

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-25"
+lastupdated: "2022-03-02"
 
 subcollection: vpc-journey
 
@@ -45,7 +45,7 @@ To get started, the following Multi-zone VPC architecture will be used.
 
 2. From the Schematics Workspace tab, choose to create a new project workspace. ![CreateWorkspace](images/provision-vpc/schematics-create-workspace.png)
 
-3. Schematics can automatically pull terraform code from a GitHub repo. Enter `https://github.com/Cloud-Schematics/gcat-multizone-vpc-bastion-subnet` as the repository URL (which represents the VPC architecture depicted above) and select Terraform_v1.0.
+3. Schematics can automatically pull terraform code from a GitHub repo. Enter `https://github.com/IBM-Cloud/cloud-journey/tree/main/VPC` as the repository URL (which represents the VPC architecture depicted above) and select **terraform_v1.0**.
     ![CreateWorkspace2](images/provision-vpc/schematics-create-workspace2.png)
 
 4. Specify the workspace details values based on your preferences. ![CreateWorkspace3](images/provision-vpc/schematics-create-workspace3.png)

@@ -4,7 +4,7 @@ Documentation repository for vpc-journey
 
 # Process
 
-```mermaid
+<!--```mermaid
 journey
     title Git journey
     section Create a new <name> branch
@@ -19,4 +19,5 @@ journey
       Check the Slack for status: 3: Me
     section failures
       Use VS Code for merge conflicts: 3 : Me
-```
+```-->
+![Process](/images/process.png)

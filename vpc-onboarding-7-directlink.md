@@ -22,8 +22,8 @@ subcollection: vpc-journey
 
 In this part of the journey, we will cover how to **establish provides private connectivity between VPC and on-prem**. To accomplish this, {{site.data.keyword.Bluemix_notm}} Direct Link will be used. You'll find there are different types of {{site.data.keyword.Bluemix_notm}} Direct Link services available to you:
 
-- {{site.data.keyword.Bluemix_notm}} Direct Link Connect (DL 2.0)
-- {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated (DL 2.0)
+- {{site.data.keyword.Bluemix_notm}} Direct Link Connect (DL 1.0 and DL 2.0)
+- {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated (DL 1.0 and DL 2.0)
 - {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated Hosting on Classic (DL 1.0)
 - {{site.data.keyword.Bluemix_notm}} Direct Link Dedicated Exchange on Classic (DL 1.0)
 
@@ -33,7 +33,7 @@ Direct Link on Classic is also referred to as Direct Link 1.0 and is traditional
 When reviewing location names in the Direct Link documentation, be aware that Dallas and Washington are unique in that their datacenter ids do not match the VPC zone numbers. Dallas 10, Dallas 12, and Dallas 13 map to Dallas 1 (Zone1), Dallas 2 (Zone2), and Dallas 3 (Zone3) in VPC. Likewise, Washington DC 4, Washington DC 6, Washington DC 7 map to Washington DC 1, Washington DC 2, and Washington DC 3 in VPC. 
 {: tip}
 
-Before moving on, be aware of the following attributes of the Direct Link 2.0 service:
+Before moving on, be aware of the following attributes of the Direct Link 2.0 service and its [limitations](https://{DomainName}/docs/dl?topic=dl-known-limitations):
 
 
 | Feature                                     | Direct Link (2.0)                                            |
@@ -47,7 +47,7 @@ Before moving on, be aware of the following attributes of the Direct Link 2.0 se
 | Bring Your Own IP (BYOIP)                   | Supports BYOIP for non-overlapping RFC-1918 IP ranges between VPC networks and on-premise networks (see [Routing considerations for IANA-registered IP assignments](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana) for details).  **<u>ADDITIONAL NOTE</u>**: While we are focussed on a VPC environment, in some cases you may still have resources on IBM Classic Infrastructure which you will need to include as part of the on-prem connectivity. Be aware that IBM Classic Infrastructure uses a 10.0.0.0/8 range so additional considerations with BYOIP may need to be made as described in the [documentation](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana). |
 | MACsec                                      | MACsec support is available in CHI01 and WDC02. Compatible with Cisco switches. |
 | Bi-directional Forwarding Detection(BFD)    | All MZRs have Direct Link (2.0) offering support.            |
-| Billing/Pricing                             | Metered based on the data utilization and unmetered flat rate support. Global routing is free. |
+| Billing/Pricing                             | Metered based on the data utilization and unmetered flat rate support. Inbound data transfer to IBM Cloud is free. Data transfer for [egress](https://{DomainName}/docs/dl?topic=dl-pricing-for-ibm-cloud-dl#metered-data-transfer-charge) varies based on region. Global routing (access to all IBM Cloud data centers globally) is free. |
 
 ## Connection Patterns
 {: #vpc-directlink-patterns}

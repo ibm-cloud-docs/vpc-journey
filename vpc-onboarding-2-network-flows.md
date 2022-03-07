@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-07"
 
 subcollection: vpc-journey
 
@@ -64,4 +64,4 @@ Additional details for each of these network flows can be found below.
 ## Next Steps
 {: #vpc-network-flows-next-steps}
 The next step on the deployment journey is:
-* [Configure IAM Roles](/docs/vpc-journey?topic=vpc-journey-vpc-iam-roles)
+* [Configure IAM Roles](/docs/vpc-journey?topic=vpc-journey-vpc-prep-account)

@@ -58,7 +58,7 @@ In above pattern, each connections has its own VRF and connection#1 prefixes can
 
 The following pattern  depicts how Transit Gateway (VPC and Classic) can be added as connection and advertise all the learnt routes from VPC and Classic infrastructure across accounts
 ![dl-directconnections](images/directlink/DL_Pattern_VPC_TransitGW.png){: class="center"}
-In above pattern, transit GW will provided connections across infrastructure and as well advertise all prefixes to Directlink GW
+In above pattern, transit GW will provide connections across infrastructures within IBMCloud and as well advertise all its prefixes to Directlink GW
 
 ## Ordering Direct Link
 {: #vpc-directlink-order}

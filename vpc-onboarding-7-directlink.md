@@ -52,6 +52,14 @@ Before moving on, be aware of the following attributes of the Direct Link 2.0 se
 ## Connection Patterns
 {: #vpc-directlink-patterns}
 
+The following pattern  depicts how individual infrastructure  (VPC and Classic) can be added as connections
+![dl-directconnections](images/directlink/DL_Pattern_VPC_DirectConnections.png){: class="center"}
+In above pattern, each connections has its own VRF and connection#1 prefixes cannot communicate with connection#2 prefixes by default. 
+
+The following pattern  depicts how Transit Gateway (VPC and Classic) can be added as connection and advertise all the learnt routes from VPC and Classic infrastructure across accounts
+![dl-directconnections](images/directlink/DL_Pattern_VPC_TransitGW.png){: class="center"}
+In above pattern, transit GW will provided connections across infrastructure and as well advertise all prefixes to Directlink GW
+
 ## Ordering Direct Link
 {: #vpc-directlink-order}
 

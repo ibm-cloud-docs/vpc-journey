@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-24"
 
 subcollection: vpc-journey
 
@@ -40,6 +40,13 @@ IBM Identity and Access Management (IAM) should be planned ahead and configured 
 - [List of IAM Permissions Needed to Perform an Action on a VPC Resource](https://{DomainName}/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls)
 
 ![Architecture](images/prepare-account/vpc-iam.png){: class="center"}
+
+## Understand VPC Quota and limitations:
+{: #vpc-prep-quotas-limits}
+
+IBM Cloud limits the VPC resources provisioned per account per region per vpc by default. Default quotas are set and can be increased by support ticket.
+
+* [VPC quotas and limits](https://https://{DomainName}/docs/vpc?topic=vpc-quotas)
 
 ## Next Steps
 {: #vpc-prep-account-next-steps}

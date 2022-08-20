@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021,2022
-lastupdated: "2022-02-18"
+  years: 2022
+lastupdated: "2022-08-20"
 
 subcollection: vpc-journey
 

@@ -24,7 +24,7 @@ Client to Site VPN provides the ability for users to establish a private connect
 ## Detailed Steps
 {: #vpc-vpn-detailed-steps}
 
-1. Create an IAM access group following steps detailed [here](https://{DomainName}/docs/vpc?topic=vpc-client-to-site-authentication#creating-cert-manager-instance-import) 
+1. Create an IAM access group by following steps detailed [here](https://{DomainName}/docs/vpc?topic=vpc-client-to-site-authentication#creating-cert-manager-instance-import) 
    ![Access](images/vpn/access.png)
 
 2. Download any supported VPN client software found [here](https://{DomainName}/docs/vpc?topic=vpc-client-to-site-vpn-planning#vpn-client-software) (example was done using OpenVPN)

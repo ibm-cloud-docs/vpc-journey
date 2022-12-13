@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021,2022
-lastupdated: "2022-02-22"
+  years: 2022
+lastupdated: "2022-12-13"
 
 subcollection: vpc-journey
 
@@ -20,7 +20,7 @@ subcollection: vpc-journey
 ## Overview
 {: #vpc-overview-hub-n-spoke}
 
-If multiple VPCs will be used within the environment a "Hub-n-Spoke" approach may be beneficial.  In this scenario:
+If multiple VPCs will be used within the environment a "Hub-and-Spoke" approach may be beneficial. In this scenario:
 
 - A transit "Hub" VPC serves as a centralized point for routing network traffic to/from the "Spoke" VPCs where workloads are running.
 - The transit "Hub" VPC can be managed by your organizations network infrastructure SMEs. Each "Spoke" VPC can be owned by a Project/App Team.
@@ -29,7 +29,7 @@ If multiple VPCs will be used within the environment a "Hub-n-Spoke" approach ma
   - While VPC has native controls such as Subnet ACLs and Security Groups for control traffic, depending on the complexity of your organization, your network team may prefer to leverage centralized VNFs in transit VPC to control the traffic.
 - VPC's Custom Routing using ingress/egress rules is used to transit packets to/from the VNF(s) in the "Hub" VPC
 
-The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data.keyword.Bluemix_notm}}:
+The following architecture depicts a VPC Hub-and-Spoke Topology on the {{site.data.keyword.Bluemix_notm}}:
 
 ![Architecture](images/advanced-elements/hub-and-spoke-standalone.png){: class="center"}
 
@@ -47,10 +47,10 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data
 - Add all VPCs (Hub and spokes) as connections to transit gateway
 ![tgw-connections](images/advanced-elements/transit-gateway-connections.png){: class="center"}
 
-- Define an ingress rule in hub VPC's custom routing table to force packets from on-premise to transit via VNF to reach target workloads
+- Define an ingress rule in hub VPC's custom routing table to force packets from on-premises to transit via VNF to reach target workloads
 ![ingress-rule](images/advanced-elements/hub-ingress-rule.png){: class="center"}
 
-- Define an engress rule in spoke VPC's custom routing table to force the return path from target destined to on-premise to transit via VNF.
+- Define an egress rule in spoke VPC's custom routing table to force the return path from target destined to on-premises to transit via VNF.
 ![egress-rule1](images/advanced-elements/spoke1-egress-rule.png){: class="center"}
 ![egress-rule2](images/advanced-elements/spoke2-egress-rule.png){: class="center"}
 
@@ -58,3 +58,7 @@ The following architecture depicts a VPC Hub-n-Spoke Topology on the {{site.data
 {: #vpc-overview-next-steps}
 Additional resources, such as leveraging [Flow Logs](https://{DomainName}/docs/vpc?topic=vpc-flow-logs) for logging VPC traffic is available within our [documentation](https://{DomainName}/docs/vpc?topic=vpc-getting-started).
 
+## Related content
+{: #vpc-overview-related-content}
+
+* [How to Use a Transit VPC with Firewall/Routers to Control Traffic in a Collection of Spoke VPCs](https://www.ibm.com/cloud/blog/how-to-use-a-transit-vpc-with-firewall/routers-to-control-traffic-in-a-collection-of-spoke-vpcs): This IBM Cloud Blog post includes more information and a Terraform configuration that is used to build a three VPCs hub-and-spoke infrastructure where all data transfers through firewall/routing appliances.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022
-lastupdated: "2022-08-20"
+  years: 2022, 2023, 2023
+lastupdated: "2023-06-20"
 
 subcollection: vpc-journey
 
@@ -30,9 +30,9 @@ This deployment guide  will be assuming the following points. Please note that w
 
 - You are already familar with the concepts introduced in the "Tour {{site.data.keyword.Bluemix_notm}}" videos available on the [Getting Started with {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/cloud/get-started)  page.
 
-- Access groups will need to be defined so only certain users have the ability to create and manage the VPC network settings (i.e. CIDR ranges, Subnet ACLs rules, etc.).
+- Access groups will need to be defined so only certain users have the ability to create and manage the VPC network settings (i.e. CIDR ranges, Subnet ACL rules, etc.,).
 
-- You have a networking background and familar with concepts such as IP Addressing, subnets, routing, etc.
+- You have a networking background and familar with concepts such as IP Addressing, subnets, routing, etc.,
 
 - Focus will be on establishing the underlying network connectivity to support VPC based workloads.
 

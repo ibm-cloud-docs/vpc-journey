@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-06-20"
+  years: 2022, 2024
+lastupdated: "2024-06-13"
 
 subcollection: vpc-journey
 
@@ -44,8 +44,7 @@ Before moving on, be aware of the following attributes of the Direct Link 2.0 se
 | BGP Authentication                          | Supported for Dedicated and Connect offerings through automation. Need to store the MD5 secret in Key Protect or an HPCS instance in the customer account. |
 | Default BGP IP address range for automation | 169.254.0.0/16.                                              |
 | Manual IP address ranges supported          | 172.16.0.0/12, 192.168.0.0/16, 10.254.0.0/16, any public IP addresses |
-| Bring Your Own IP (BYOIP)                   | Supports BYOIP for non-overlapping RFC-1918 IP ranges between VPC networks and on-premise networks (see [Routing considerations for IANA-registered IP assignments](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana) for details).  **<u>ADDITIONAL NOTE</u>**: While we are focussed on a VPC environment, in some cases you may still have resources on IBM Classic Infrastructure which you will need to include as part of the on-prem connectivity. Be aware that IBM Classic Infrastructure uses a 10.0.0.0/8 range so additional considerations with BYOIP may need to be made as described in the [documentation](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana). |
-| MACsec                                      | MACsec support is available in CHI01 and WDC02. Compatible with Cisco switches. |
+| Bring Your Own IP (BYOIP)                   | Supports BYOIP for non-overlapping RFC-1918 IP ranges between VPC networks and on-premise networks (see [Routing considerations for IANA-registered IP assignments](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana) for details).  **<u>ADDITIONAL NOTE</u>**: While we are focussed on a VPC environment, in some cases you may still have resources on IBM Classic Infrastructure which you will need to include as part of the on-prem connectivity. Be aware that IBM Classic Infrastructure uses a 10.0.0.0/8 range so additional considerations with BYOIP may need to be made as described in the [documentation](https://{DomainName}/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana). | 
 | Bi-directional Forwarding Detection(BFD)    | All MZRs have Direct Link (2.0) offering support.            |
 | Billing/Pricing                             | Metered based on the data utilization and unmetered flat rate support. Inbound data transfer to IBM Cloud is free. Data transfer for [egress](https://{DomainName}/docs/dl?topic=dl-pricing-for-ibm-cloud-dl#metered-data-transfer-charge) varies based on region. Global routing (access to all IBM Cloud data centers globally) is free. |
 
